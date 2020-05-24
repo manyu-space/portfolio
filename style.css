@@ -16,9 +16,9 @@ body{
 }
 
 .b {
-  margin-bottom: 5em;
+  margin-bottom: 3em;
   padding-left: 1em;
-  width: 80%;
+  width: 75%;
 }
 
 .b a{
@@ -35,6 +35,7 @@ body{
   background: orange;
   transition: all 200ms ease-in-out;
 }
+
 
 ul {
   font-family:'Raleway';
@@ -74,30 +75,82 @@ margin: auto;
 opacity: 1;
 }
 
-
+/*short intro*/
 h1{
   font-family: 'Lato', sans-serif;
-  font-weight: 400;
+  font-weight: 380;
   text-align:left;
   font-size: 2em;
   line-height: 1.6em;
+  color: black;
 }
 
+/*news literacy 2019*/
 h2{
   font-family: 'Raleway', sans-serif;
   font-weight: 400;
   text-align:left;
-  font-size: 1em;
+  font-size: 1.2em;
   line-height: 1em;
   color: #9A9A9A;
 }
 
+/*writing and storytelling*/
+h3{
+  font-family:'Raleway',sans-serif;
+  font-weight: 700;
+  font-size: 2em;
+  color:black;
+}
+
+/*resume LinkedIn*/
+h4{
+  font-family: 'Raleway', sans-serif;
+  font-weight: 450;
+  text-align:left;
+  font-size: 1.3em;
+  line-height: 1em;
+}
+
+/*footer*/
+h5{
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 0.8em;
+  text-align: center;
+  line-height: 1.1em;
+  color: grey;
+}
+
+/*long head*/
 p{
   font-family: 'reith';
   font-weight: 400;
-  font-size: 1.2em;
+  font-size: 1.3em;
   text-align: left;
   line-height: 1.1em;
+}
+
+.social{
+  display: flex;
+}
+
+.social a:link{
+  text-decoration: none;
+  background-image: none;
+}
+
+.social a:hover{
+  background: none;
+  opacity: 0.4;
+  transition: all 200ms ease-in-out;
+}
+
+.social img{
+  height: 4vh;
+  width: 4vh;
+  margin-right: 1.8vw;
+  opacity: 0.7;
 }
 
 img.portrait{
@@ -105,7 +158,7 @@ width: 100%;
 height: auto;
 margin :auto;
 box-shadow: 0 0 10px .1px rgba(78,78,78,0.05);
--moz-box-shadow:    0 0 10px .1px rgba(78,78,78,0.05);
+-moz-box-shadow:   0 0 10px .1px rgba(78,78,78,0.05);
 -webkit-box-shadow: 0 0 10px .1px rgba(78,78,78,0.05);
 transition: .5s ease;
 }
@@ -117,12 +170,12 @@ transition: transform 0.4s;
 }
 
 a:link {
-  color:black;
+  color:#575757;
   text-decoration: none;
 }
 
 a:visited {
-  color:black;
+  color:#575757;
 }
 
 a:hover {
@@ -148,9 +201,9 @@ a:active {
     grid-template-areas:
     "a a"
     "b b"
-    "c d"
+    "c c"
+    "d e"
     "f g"
-    "e h"
   }
 
 header{
@@ -184,15 +237,61 @@ h1{
     margin-right: auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: minmax(150px, auto);
+    grid-auto-rows: minmax(100px, auto);
     grid-column-gap: 1em;
     grid-row-gap: 1.5em;
     grid-template-areas:
     "a a a"
     "b b b"
-    "c d e"
-    "f g h"
-    "i j k"
-    "l m n"
-    "o p q"
+    "c c c"
+    "d e f"
+    "g h i"
+    "j j j"
+    "k l m"
+    "n n n"
+    }
+
+    .a{
+      grid-area:a;
+    }
+
+    .b{
+      grid-area:b;
+    }
+
+    .c{
+      grid-area:c;
+    }
+
+    .j{
+      grid-area: j;
+    }
+
+    .n{
+      grid-area: n;
+    }
+
+
+  #container2{
+    width: 75em;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    grid-column-gap: 1em;
+    grid-row-gap: 1.5em;
+    grid-template-areas:
+    "a a a"
+    "b b b"
+  }
+
+  .a{
+    grid-area:a;
+  }
+
+  .b{
+    grid-area:b;
   }
